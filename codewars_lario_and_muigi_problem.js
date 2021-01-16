@@ -12,6 +12,13 @@ Input: 1,3,5,6,7,8
 Output: 1,2,3,4,5,6,7,8
 */
 
-function pipeFix(numbers){
+const pipeFix = (numbers) => {
+  let first = numbers[0];
+  let last = numbers[numbers.length - 1];
+  let array = [];
+  for(let i = first; i < last + 1; i++) {
+    array.push(i);
+  }
 
+  return array;
 }
